@@ -1,0 +1,39 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #d31e1e;
+    text-align: center;
+    background: #000
+}
+
+.box {
+ 
+    justify-content: space-evenly;
+    position: absolute;
+    top: 120px;
+    left: 320px;
+    font-size: 20px;
+    
+}
+
+.text{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.box2{
+    background-color: rgb(124, 125, 128);
+    height: 840px;
+}
+
+.textbox{
+    background-color: aliceblue;
+    margin: 1px;
+    height: 480px;
+    width: 97%;
+}
+
+

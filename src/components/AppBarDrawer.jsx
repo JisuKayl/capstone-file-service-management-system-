@@ -23,8 +23,9 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import CampaignIcon from "@mui/icons-material/Campaign";
+import AnnouncementIcon from "@mui/icons-material/Announcement";
 import ComputerIcon from "@mui/icons-material/Computer";
+import FindInPageIcon from "@mui/icons-material/FindInPage";
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Logo from "../assets/Baliuag_University_logo.png";
@@ -34,10 +35,23 @@ import DashboardPage from "../pages/Dashboard/Dashboard.jsx";
 import AnnouncementPage from "../pages/Announcement/Announcement.jsx";
 import RoomReservationPage from "../pages/Room Reservation/RoomReservation.jsx";
 import EquipmentReservationPage from "../pages/Equipment Reservation/EquipmentReservation.jsx";
-// import LostAndFoundPage from "../pages/Lost and Found/LostAndFound.jsx";
-// import FindInPageIcon from "@mui/icons-material/FindInPage";
+import LostAndFoundPage from "../pages/Lost and Found/LostAndFound.jsx";
 import FormsPage from "../pages/Forms/Forms.jsx";
 import InboxPage from "../pages/Inbox/Inbox.jsx";
+
+
+import Announcementdetails from "../pages/Announcement/Announcement.jsx";
+
+import BookRoom from "../pages/Room Reservation/BookRoom/BookRoom.jsx";
+import CreateRoom from "../pages/Room Reservation/CreatingRoom/CreatingRoom.jsx"
+import ViewRequest from "../pages/Room Reservation/ViewRequest/RequestRoom.jsx"
+import ViewRoom from "../pages/Room Reservation/ViewRoom/ViewRoom.jsx"
+
+import BorrowEquip from "../pages/Equipment Reservation/BorrowEquipment/BorrowEquip.jsx"
+import CreateEquip from "../pages/Equipment Reservation/CreatingRequest/Create.jsx"
+import ViewEquip from "../pages/Equipment Reservation/ViewEquipment/ViewEquipment.jsx"
+import ViewRequestEquip from "../pages/Equipment Reservation/ViewRequest/ViewRequest.jsx"
+
 
 const drawerWidth = 240;
 
@@ -113,6 +127,7 @@ export default function MiniDrawer() {
   const location = useLocation();
   let navigate = useNavigate();
 
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -187,14 +202,12 @@ export default function MiniDrawer() {
             <MenuItem onClick={handleMenuClose}>My Account</MenuItem>
             <MenuItem onClick={handleMenuClose}>Change Password</MenuItem>
             <Divider />
-            <MenuItem
-              onClick={() => {
+            <MenuItem onClick={() => {
                 localStorage.removeItem("token");
                 localStorage.removeItem("role");
                 navigate("/login");
                 handleMenuClose();
-              }}
-            >
+              }}>
               Logout
               <ListItemIcon sx={{ marginLeft: "auto" }}></ListItemIcon>
               <ListItemIcon>
@@ -217,15 +230,10 @@ export default function MiniDrawer() {
         <Divider />
         <List>
           {[
+            { text: "Dashboard", icon: <DashboardIcon />, path: "/" },
             {
-              text: "Dashboard",
-              icon: <DashboardIcon />,
-              path: "/",
-              action: "route",
-            },
-            {
-              text: "Announcements",
-              icon: <CampaignIcon />,
+              text: "Announcement",
+              icon: <AnnouncementIcon />,
               path: "/announcement",
               action: "route",
             },
@@ -241,24 +249,10 @@ export default function MiniDrawer() {
               path: "/equipment-reservation",
               action: "route",
             },
-            // {
-            //   text: "Lost and Found",
-            //   icon: <FindInPageIcon />,
-            //   path: "/lost-and-found",
-            // },
-            {
-              text: "Forms",
-              icon: <DescriptionIcon />,
-              path: "/forms",
-              action: "route",
-            },
-            {
-              text: "Inbox",
-              icon: <MailIcon />,
-              path: "/inbox",
-              action: "route",
-            },
-          ].map(({ text, icon, path, action }) => (
+            
+            { text: "Forms", icon: <DescriptionIcon />, path: "/forms",action: "route", },
+            { text: "Inbox", icon: <MailIcon />, path: "/inbox",action: "route", },
+          ].map(({ text, icon, path , action }) => (
             <ListItem key={text} disablePadding>
               <ListItemButton
                 component={action === "route" ? Link : undefined} // Conditionally set component
@@ -296,9 +290,26 @@ export default function MiniDrawer() {
             path="/equipment-reservation"
             element={<EquipmentReservationPage />}
           />
-          {/* <Route path="/lost-and-found" element={<LostAndFoundPage />} /> */}
+          <Route path="/lost-and-found" element={<LostAndFoundPage />} />
           <Route path="/forms" element={<FormsPage />} />
           <Route path="/inbox" element={<InboxPage />} />
+
+          <Route path="/announcement/details" element={<Announcementdetails />} />
+          <Route path="/room-reservation/book" element={<BookRoom />} />
+
+          <Route path="/room-reservation/book/create" element={<CreateRoom />} />
+          <Route path="/room-reservation/request" element={<ViewRequest />} />
+          <Route path="/room-reservation/view" element={<ViewRoom />} />
+
+          <Route path="/equipment-reservation/borrow" element={<BorrowEquip />} />
+          <Route path="/equipment-reservation/borrow/create" element={<CreateEquip />} />
+          <Route path="/equipment-reservation/view" element={<ViewEquip />} />
+          <Route path="/equipment-reservation/request" element={<ViewRequestEquip />} />
+          
+        
+
+
+          
         </Routes>
       </Box>
     </Box>

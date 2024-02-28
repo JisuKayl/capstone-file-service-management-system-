@@ -6,7 +6,52 @@ const DashboardPage = () => {
   return (
     <>
       <h1 className={DashboardCss.h1}>Dashboard</h1>
-      {/* Add your dashboard content here */}
+      
+
+      <div className={DashboardCss.container}>
+        
+        <div className={DashboardCss.line}>
+
+          {/* Vertical Line */}
+
+        </div>
+
+        <div>
+
+          <p className={DashboardCss.Text1}>CITS Information</p>
+
+          <p className={DashboardCss.Text2}>History:</p>
+
+          <p className={DashboardCss.Text3}>Information:</p>
+          
+          <p className={DashboardCss.Text4}>Service:</p>
+
+        </div>
+
+      </div>
+
+      <div className={DashboardCss.container2}>
+
+        <div className={DashboardCss.Box}>
+
+         <p>Sample 1</p>
+
+        </div>
+
+        <div className={DashboardCss.Box}>
+
+          <p>Sample 2</p>
+
+        </div>
+
+        <div className={DashboardCss.Box}>
+          
+          <p>Sample 3</p>
+
+        </div>
+
+      </div>
+
     </>
   );
 };
