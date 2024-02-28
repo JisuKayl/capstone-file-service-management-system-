@@ -1,9 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import StudentPageCSS from "../Student Page/StudentPageCss.module.css"
+import StudentAppBar from "../../components/AppBarStudent";
 
 const StudentSpecificPage = () => {
-  return <div className={StudentPageCSS.h1}>This is the student-specific page</div>;
+
+
+  return(
+    <>
+    <StudentAppBar/>
+    </>
+  )
+  
 };
 
 export default StudentSpecificPage;

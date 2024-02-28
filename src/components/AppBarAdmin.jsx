@@ -29,6 +29,7 @@ import FindInPageIcon from "@mui/icons-material/FindInPage";
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
 import DescriptionIcon from "@mui/icons-material/Description";
 import CampaignIcon from "@mui/icons-material/Campaign";
+
 import Logo from "../assets/Baliuag_University_logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
@@ -120,7 +121,7 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-export default function MiniDrawer() {
+export default function AdminAppBar() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const [notificationCount, setNotificationCount] = React.useState(0);
@@ -250,6 +251,7 @@ export default function MiniDrawer() {
               path: "/equipment-reservation",
               action: "route",
             },
+          
             
             { text: "Forms", icon: <DescriptionIcon />, path: "/forms",action: "route", },
             { text: "Inbox", icon: <MailIcon />, path: "/inbox",action: "route", },
@@ -284,7 +286,7 @@ export default function MiniDrawer() {
 
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "3rem" }}>
         <Routes>
-          <Route path="/" element={<DashboardPage />} />
+          {/* <Route path="/" element={<DashboardPage />} />
           <Route path="/announcement" element={<AnnouncementPage />} />
           <Route path="/room-reservation" element={<RoomReservationPage />} />
           <Route
@@ -295,18 +297,8 @@ export default function MiniDrawer() {
           <Route path="/forms" element={<FormsPage />} />
           <Route path="/inbox" element={<InboxPage />} />
 
-          <Route path="/announcement/details" element={<Announcementdetails />} />
-          <Route path="/room-reservation/book" element={<BookRoom />} />
-
-          <Route path="/room-reservation/book/create" element={<CreateRoom />} />
-          <Route path="/room-reservation/request" element={<ViewRequest />} />
-          <Route path="/room-reservation/view" element={<ViewRoom />} />
-
-          <Route path="/equipment-reservation/borrow" element={<BorrowEquip />} />
-          <Route path="/equipment-reservation/borrow/create" element={<CreateEquip />} />
-          <Route path="/equipment-reservation/view" element={<ViewEquip />} />
-          <Route path="/equipment-reservation/request" element={<ViewRequestEquip />} />
-          
+          <Route path="/announcement/details" element={<Announcementdetails />} /> */}
+        
         
 
 
