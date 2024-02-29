@@ -1,0 +1,70 @@
+.userpic {
+  background-color: green;
+  margin: 20px;
+  text-align: center;
+  height: 5em;
+  width: 6em;
+
+  line-height: 5em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.text {
+  color: rgb(2, 2, 2);
+  font-size: 0.6em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.container {
+  display: flex;
+}
+
+.container2 {
+  display: flex;
+  margin-top: 1.3em;
+  height: 7.4em;
+  width: 50%;
+  font-size: 1.3em;
+  justify-content: space-between;
+}
+
+.background {
+  margin: 1em;
+  height: 11em;
+  background-color: rgb(255, 255, 255);
+}
+
+.blackbb {
+  margin: 0.2em;
+  background-color: #000;
+  height: 100em;
+  text-align: center;
+}
+
+.username {
+  text-align: center;
+
+  width: 11.2em;
+}
+
+.but {
+  margin-top: 2.2em;
+  cursor: pointer;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1.1em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  height: 4em;
+  width: 10em;
+  margin-left: 9rem;
+}
+
+.butbox {
+  margin-left: 17em;
+}

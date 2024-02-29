@@ -1,0 +1,42 @@
+
+.container{
+  height: 100%;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  margin: 0;
+  padding: 0;
+  border-width:1px;
+  position: fixed;
+  overflow: auto;
+}
+.inbox{
+  height: 150px;
+  margin: 20px;
+  color: aliceblue;
+  background-color: rgb(24, 24, 24);
+}
+.main{
+  width: auto;
+  height: 1000px;
+  border: solid;
+  border-width: 1px;
+  margin-left: 32%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+}
+.header{
+  height: 50px;
+  margin-left: 32%;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  border: solid;
+  border-width: 1px;
+}
+.inboximage{
+  margin: 100px;
+  font-size: 100px;
+  color: aliceblue;
+  background-color: black;
+}

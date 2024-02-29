@@ -1,0 +1,50 @@
+.h1 {
+  color: palevioletred;
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: aliceblue;
+}
+.img{
+  background-color: rgb(124, 125, 128);
+  margin: 20px;
+  text-align: center;
+  height: 400px;
+  line-height: 400px;
+  font-size: 50px;
+  color: red;
+}
+
+.box{
+  margin: 20px;
+  background-color: black;
+  width: 500px;
+  height: 700px;
+}
+
+.info{
+  background-color: green;
+  color: black;
+  width: 200px;
+  margin: auto;
+  font-size: 30px;
+}
+
+.info2{
+  background-color: green;
+  color: black;
+  width: 200px;
+  margin: auto;
+  margin-top: 3.6em;
+  font-size: 30px;
+}
+
+
+
+.text{
+  font-size: 60px;
+  margin: 20px;
+}

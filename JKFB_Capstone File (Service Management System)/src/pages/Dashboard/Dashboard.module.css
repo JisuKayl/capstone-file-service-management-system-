@@ -1,0 +1,73 @@
+.h1 {
+  color: green;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+}
+.container2 {
+  display: flex;
+}
+
+.line {
+  border-left: 20px solid rgb(8, 8, 8);
+  height: 400px;
+  margin-right: 2rem;
+}
+
+.Text1 {
+  color: rgb(153, 2, 153);
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: none;
+}
+.Text2 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: none;
+}
+.Text3 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: none;
+}
+.Text4 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.Box {
+  text-align: center;
+  color: aliceblue;
+  width: 200px;
+  height: 300px;
+  background-color: #0c0a0a;
+  margin: 40px;
+  border-radius: 20px;
+  padding: 20px;
+}

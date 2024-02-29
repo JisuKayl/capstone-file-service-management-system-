@@ -1,0 +1,34 @@
+.circle {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  background: green;
+  margin-block: 1rem;
+  margin-right: 1rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.box2 {
+  margin: 1rem;
+}
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

@@ -1,0 +1,16 @@
+.img {
+  background-color: rgb(124, 125, 128);
+  margin: 20px;
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  font-size: 50px;
+  color: white;
+}
+
+.box {
+  margin: 20px;
+  background-color: black;
+  width: 500px;
+  height: 700px;
+}

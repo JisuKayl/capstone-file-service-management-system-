@@ -1,0 +1,49 @@
+.h1 {
+  color: green;
+}
+
+.img {
+  display: f;
+  background-color: aqua;
+  color: white;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  background: green;
+  margin-block: 1rem;
+}
+
+.box2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-block: 2px solid rgb(197, 197, 197);
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+}
+
+.posted {
+  margin: 12px;
+}
+
+.description {
+  margin-right: 1400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.username {
+  font-weight: bold;
+}
